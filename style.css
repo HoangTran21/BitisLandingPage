@@ -48,7 +48,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1rem 10%;
+    padding: 0.5rem 10% 1rem; /* Slightly reduced top padding to move it up */
     background: transparent;
     z-index: 1000;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1697,16 +1697,16 @@ section {
     max-height: 400px;
     overflow-y: auto;
     padding-right: 20px;
-    font-size: 0.98rem;
-    line-height: 1.85;
+    font-size: 1rem; /* Slightly larger base size */
+    line-height: 1.9; /* Increased line-height for better flow */
     color: #2d2d2d;
     text-align: left;
-    letter-spacing: 0.01em;
+    letter-spacing: 0.015em;
     word-break: break-word;
 }
 
 .modal-descriptionScroll p {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5rem; /* Increased paragraph spacing to avoid 'block' appearance */
 }
 
 .modal-descriptionScroll::-webkit-scrollbar {
