@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Roboto:wght@400;500;700&family=Montserrat:wght@700;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Roboto:wght@400;500;700&family=Montserrat:wght@700;800;900&display=swap&subset=vietnamese"
         rel="stylesheet">
     <!-- GSAP for advanced animations -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -22,10 +22,18 @@
 
     <nav id="navbar">
         <div class="nav-links">
-            <a href="#">HOME</a>
-            <a href="#journey">THE JOURNEY</a>
-            <a href="#product">THE SHOES</a>
-            <!-- <a href="#event">EVENT</a> -->
+            <a href="#">
+                <span class="lang-en">HOME</span>
+                <span class="lang-vi">TRANG CHỦ</span>
+            </a>
+            <a href="#journey">
+                <span class="lang-en">THE JOURNEY</span>
+                <span class="lang-vi">HÀNH TRÌNH</span>
+            </a>
+            <a href="#product">
+                <span class="lang-en">THE SHOES</span>
+                <span class="lang-vi">SẢN PHẨM</span>
+            </a>
             <a href="#">EN | VI</a>
         </div>
     </nav>
@@ -36,20 +44,28 @@
         </section>
 
         <section id="journey" class="journey">
-            <div class="section-tag">01. THE JOURNEY</div>
+            <div class="section-tag">
+                <span class="lang-en">01. THE JOURNEY</span>
+                <span class="lang-vi">01. HÀNH TRÌNH</span>
+            </div>
             <div class="journey-reveal-wrapper">
-                <div class="bird-fly-container">
-                    <div class="lac-bird"></div>
-                </div>
-
                 <div class="journey-section">
                     <div class="header-row">
                         <div class="title-block">
-                            <p class="eyebrow">The Journey</p>
-                            <h1>A STORY IN<br>MOTION</h1>
-                            <p class="subtitle">From the coffee highlands of Vietnam to the vibrant streets of South
-                                Africa.
-                                Different places, same rhythm.</p>
+                            <p class="eyebrow">
+                                <span class="lang-en">The Journey</span>
+                                <span class="lang-vi">Hành trình</span>
+                            </p>
+                            <h1 class="main-heading">
+                                <span class="lang-en">A STORY IN<br>MOTION</span>
+                                <span class="lang-vi">MỘT CÂU CHUYỆN<br>KHÔNG NGỪNG <span class="nowrap">CHUYỂN ĐỘNG</span></span>
+                            </h1>
+                            <p class="subtitle">
+                                <span class="lang-en">From the coffee highlands of Vietnam to the vibrant streets of
+                                    South Africa. Different places, same rhythm.</span>
+                                <span class="lang-vi">Từ vùng cao nguyên cà phê Việt Nam đến những con phố sôi động ở
+                                    Nam Phi. Những con phố khác. Nhưng cùng một nhịp điệu.</span>
+                            </p>
                         </div>
 
                         <div class="route-block">
@@ -76,8 +92,14 @@
                     <!-- Timeline -->
                     <div class="timeline-wrap">
                         <div class="timeline-labels">
-                            <span class="label-from">FROM VIETNAM</span>
-                            <span class="label-to">TO SOUTH AFRICA</span>
+                            <span class="label-from">
+                                <span class="lang-en">FROM VIETNAM</span>
+                                <span class="lang-vi">TỪ VIỆT NAM</span>
+                            </span>
+                            <span class="label-to">
+                                <span class="lang-en">TO SOUTH AFRICA</span>
+                                <span class="lang-vi">ĐẾN NAM PHI</span>
+                            </span>
                         </div>
 
                         <div class="timeline-track">
@@ -96,11 +118,19 @@
                                         fill="#1c1c1c" />
                                 </svg>
                             </div>
-                            <div class="km-caption"><b>10,433 KM</b><br>Across the<br>Indian Ocean</div>
+                            <div class="km-caption">
+                                <b>10,433 KM</b><br>
+                                <span class="lang-en">Across the<br>Indian Ocean</span>
+                                <span class="lang-vi">Băng qua Ấn Độ<br>Dương</span>
+                            </div>
 
                             <div class="node node-green node-4">04</div>
                             <div class="node node-green node-5">05</div>
                             <div class="node node-green node-6">06</div>
+
+                            <div class="bird-fly-container">
+                                <div class="lac-bird"></div>
+                            </div>
                         </div>
                     </div>
 
@@ -112,9 +142,16 @@
                                 <div class="card-icon icon-red" aria-hidden="true">
                                     <img src="assets/highlands.png" alt="Coffee Highlands">
                                 </div>
-                                <div class="card-title">Coffee Highlands</div>
-                                <p class="card-text">Where millions of coffee beans are grown, and thereby our story
-                                    begins.</p>
+                                <div class="card-title">
+                                    <span class="lang-en">Coffee Highlands</span>
+                                    <span class="lang-vi">Cao nguyên cà phê</span>
+                                </div>
+                                <p class="card-text">
+                                    <span class="lang-en">Where millions of coffee beans are grown, and thereby our
+                                        story begins.</span>
+                                    <span class="lang-vi">Nơi hàng triệu hạt cà phê được nuôi dưỡng, khởi đầu nhịp điệu
+                                        của câu chuyện.</span>
+                                </p>
                                 <div class="card-media">
                                     <img src="assets/Cao Nguyên Cà Phê.jpg" alt="Coffee Highlands">
                                 </div>
@@ -124,8 +161,15 @@
                                 <div class="card-icon icon-red" aria-hidden="true">
                                     <img src="assets/coffee.webp" alt="Coffee Grounds">
                                 </div>
-                                <div class="card-title">Coffee Grounds</div>
-                                <p class="card-text">What’s left behind can still create something amazing.</p>
+                                <div class="card-title">
+                                    <span class="lang-en">Coffee Grounds</span>
+                                    <span class="lang-vi">Bã cà phê</span>
+                                </div>
+                                <p class="card-text">
+                                    <span class="lang-en">What's left behind can still create something amazing.</span>
+                                    <span class="lang-vi">Những gì tưởng chừng bị bỏ lại vẫn có thể tạo nên những điều
+                                        phi thường.</span>
+                                </p>
                                 <div class="card-media">
                                     <img src="assets/Bã cà phê.jpg" alt="Coffee Highlands">
                                 </div>
@@ -134,8 +178,16 @@
                                 <div class="card-icon icon-red" aria-hidden="true">
                                     <img src="assets/sole.png" alt="GroundStep Technology">
                                 </div>
-                                <div class="card-title">GroundStep Technology</div>
-                                <p class="card-text">Recycled coffee grounds turned into a high-performance inside.</p>
+                                <div class="card-title">
+                                    <span class="lang-en">GroundStep™ Technology</span>
+                                    <span class="lang-vi">Công nghệ GroundStep™</span>
+                                </div>
+                                <p class="card-text">
+                                    <span class="lang-en">Recycled coffee grounds turned into a high-performance
+                                        insole.</span>
+                                    <span class="lang-vi">Bã cà phê tái chế được chuyển hóa thành lớp đế lót hiệu năng
+                                        cao.</span>
+                                </p>
                                 <div class="card-media">
                                     <img src="assets/lót giày bã cà phê.jfif" alt="Coffee Highlands">
                                 </div>
@@ -166,8 +218,15 @@
                                 <div class="card-icon icon-gold" aria-hidden="true">
                                     <img src="assets/heart.png" alt="Geluk">
                                 </div>
-                                <div class="card-title">Geluk</div>
-                                <p class="card-text">"Happiness".</p>
+                                <div class="card-title">
+                                    <span class="lang-en">Geluk - Happiness</span>
+                                    <span class="lang-vi">Geluk - Hạnh Phúc</span>
+                                </div>
+                                <p class="card-text">
+                                    <span class="lang-en">Happiness in Afrikaans. A new word, same feeling.</span>
+                                    <span class="lang-vi">Hạnh phúc trong tiếng Afrikaans. Ngành ngữ mới, nhưng cảm xúc
+                                        cũ.</span>
+                                </p>
                                 <div class="card-media">
                                     <img src="assets/Geluk.jpg" alt="Coffee Highlands">
                                 </div>
@@ -177,8 +236,15 @@
                                 <div class="card-icon icon-green" aria-hidden="true">
                                     <img src="assets/people.png" alt="Ubuntu">
                                 </div>
-                                <div class="card-title">Ubuntu</div>
-                                <p class="card-text">New streets to walk, new stories to live, still the same rhythm.
+                                <div class="card-title">
+                                    <span class="lang-en">Ubuntu Philosophy</span>
+                                    <span class="lang-vi">Triết lý Ubuntu</span>
+                                </div>
+                                <p class="card-text">
+                                    <span class="lang-en">"I am because we are." A philosophy that brings us
+                                        together.</span>
+                                    <span class="lang-vi">"Tôi tồn tại vì chúng ta tồn tại." Triết lý mang chúng ta lại
+                                        gần nhau.</span>
                                 </p>
                                 <div class="card-media">
                                     <img src="assets/Ubuntu.jpg" alt="Coffee Highlands">
@@ -189,8 +255,15 @@
                                 <div class="card-icon icon-green" aria-hidden="true">
                                     <img src="assets/cape.png" alt="Cape Town Streets">
                                 </div>
-                                <div class="card-title">Cape Town Streets</div>
-                                <p class="card-text">New streets to walk. New stories to live. Same rhythm.</p>
+                                <div class="card-title">
+                                    <span class="lang-en">Cape Town Streets</span>
+                                    <span class="lang-vi">Đường phố Cape Town</span>
+                                </div>
+                                <p class="card-text">
+                                    <span class="lang-en">New streets to walk. New stories to live. Same rhythm.</span>
+                                    <span class="lang-vi">Những con phố mới để bước đi. Những câu chuyện mới để
+                                        sống.</span>
+                                </p>
                                 <div class="card-media">
                                     <img src="assets/Cape Town.jpg" alt="Coffee Highlands">
                                 </div>
@@ -203,18 +276,29 @@
                     <div class="footer-row">
                         <div class="word-swap">
                             <div class="word-block">
-                                <div class="word-label">FROM</div>
+                                <div class="lang-en">FROM</div>
+                                <div class="lang-vi">TỪ</div>
                                 <div class="word-vn">HẠNH PHÚC</div>
-                                <div class="word-lang">(VIETNAMESE)</div>
+                                <div class="word-lang">
+                                    <span class="lang-en">(VIETNAMESE)</span>
+                                    <span class="lang-vi">(TIẾNG VIỆT)</span>
+                                </div>
                             </div>
                             <div class="arrow">&#8594;</div>
                             <div class="word-block">
-                                <div class="word-label">TO</div>
+                                <div class="lang-en">TO</div>
+                                <div class="lang-vi">ĐẾN</div>
                                 <div class="word-af">GELUK</div>
-                                <div class="word-lang">(AFRIKAANS)</div>
+                                <div class="word-lang">
+                                    <span class="lang-en">(AFRIKAANS)</span>
+                                    <span class="lang-vi">(TIẾNG AFRIKAANS)</span>
+                                </div>
                             </div>
                         </div>
-                        <div class="tagline">Different streets.<br>Same rhythm.</div>
+                        <div class="tagline">
+                            <span class="lang-en">Different streets.<br>Same rhythm.</span>
+                            <span class="lang-vi">Những con phố khác.<br>Nhưng cùng một nhịp điệu.</span>
+                        </div>
                         <div class="footer-stamp" aria-label="Biti's logo">
                             <img src="assets/logo.png" alt="Biti's">
                         </div>
@@ -253,7 +337,10 @@
 
         <!-- Product Section -->
         <section id="product" class="products">
-            <div class="section-tag">02. THE SHOES</div>
+            <div class="section-tag">
+                <span class="lang-en">02. THE SHOES</span>
+                <span class="lang-vi">02. SẢN PHẨM</span>
+            </div>
             <div class="journey-content-wrapper" style="min-height: auto; margin-bottom: 2rem;">
                 <div class="sa-lac-bird product-bird">
                     <img src="assets/lacbird.png" alt="Lac Bird" class="sa-bird-img">
@@ -293,7 +380,7 @@
                                 <div class="product-overlay"><span>Xem chi tiết</span></div>
                             </div>
                             <div class="product-info">
-                                <h3>Biti’s Hunter X LiteDash “Go For Love” 2k25 Edition</h3>
+                                <h3>Biti’s Hunter X LiteDash <span class="nowrap">“Go For Love”</span> 2k25 Edition</h3>
                             </div>
                         </a>
                     </div>
@@ -316,9 +403,18 @@
         </section>
     </main>
 
-    <footer style="padding: 4rem 10%; background: #000; color: #555; text-align: center;">
-        <div style="font-size: 2rem; font-weight: 800; color: #fff; margin-bottom: 1rem;">Biti's</div>
-        <p>&copy; 2026 Biti's Vietnam - South Africa Journey. All Rights Reserved.</p>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <div class="footer-brand">Biti's</div>
+                <p>&copy; 2026 Biti's Vietnam - South Africa Journey. All Rights Reserved.</p>
+            </div>
+            <div class="footer-right">
+                <div class="qr-code">
+                    <img src="assets/qr.jpg" alt="QR Code">
+                </div>
+            </div>
+        </div>
     </footer>
 
     <!-- Product Modal 1 -->
@@ -333,59 +429,74 @@
             </button>
             <div class="modal-content">
                 <div class="modal-left">
-                    <div class="badge-special">SPECIAL EDITION</div>
+                    <div class="badge-special">
+                        <span class="lang-en">SPECIAL EDITION</span>
+                        <span class="lang-vi">PHIÊN BẢN ĐẶC BIỆT</span>
+                    </div>
                     <div class="shoe-placeholder-container">
                         <img src="assets/modal/Biti’s Hunter 2_9 Special Edition.jpg" alt="Biti’s Hunter 2/9"
                             class="modal-shoe-img">
                     </div>
-                    <div class="photo-polaroids">
+                    <!-- <div class="photo-polaroids">
                         <div class="polaroid polaroid-1"><img src="assets/Cape Town.jpg" alt="Cape Town"></div>
                         <div class="polaroid polaroid-2"><img src="assets/Key Visual-06.png" alt="Detail"
                                 style="opacity: 0.3;"></div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Biti’s Hunter 2/9<br>Special Edition</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Biti’s Hunter 2/9<br>Special Edition</span>
+                        <span class="lang-vi">Biti’s Hunter 2/9<br>Phiên Bản Đặc Biệt</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-description">
-                        <p>Sản phẩm là tuyên ngôn về giá trị địa phương, mượn ý nghĩa ngày 2 tháng 9 - ngày Quốc khánh
-                            Việt Nam, kỷ niệm 80 năm đất nước giành độc lập (02.09.1945 - 02.09.2025). Đây không chỉ là
-                            một mẫu giày, mà là diễn ngôn văn hóa về lòng tự hào dân tộc, về ký ức lịch sử và về khát
-                            vọng hạnh phúc của người Việt.</p>
-                        <p>Khi đối thoại với thị trường Nam Phi, câu chuyện này trở nên đặc biệt phù hợp vì cả hai quốc
-                            gia đều có lịch sử đấu tranh giải phóng dân tộc:</p>
-                        <ul class="history-list">
-                            <li><span class="star-icon">★</span> <strong>Việt Nam:</strong> giành độc lập từ ách thống
-                                trị Pháp (1945)</li>
-                            <li><span class="star-icon">★</span> <strong>Nam Phi:</strong> xóa bỏ chế độ phân biệt chủng
-                                tộc Apartheid (1994) dưới sự lãnh đạo của Nelson Mandela</li>
-                        </ul>
-                        <p>Triết lý Ubuntu của Nam Phi - "I am because we are" (tôi tồn tại vì chúng ta tồn tại) giao
-                            thoa mạnh mẽ với thông điệp hạnh phúc của Biti's.</p>
-                    </div>
-                    <div class="modal-icons">
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                                </svg></div><span>TỰ HÀO DÂN TỘC</span>
+                        <div class="lang-vi">
+                            <p>Sản phẩm là tuyên ngôn về giá trị địa phương, mượn ý nghĩa ngày 2 tháng 9 - ngày Quốc
+                                khánh Việt Nam, kỷ niệm 80 năm đất nước giành độc lập (02.09.1945 - 02.09.2025). Đây
+                                không chỉ là một mẫu giày, mà là diễn ngôn văn hóa về lòng tự hào dân tộc, về ký ức lịch
+                                sử và về khát vọng hạnh phúc của người Việt.</p>
+                            <p>Khi đối thoại với thị trường Nam Phi, câu chuyện này trở nên đặc biệt phù hợp vì cả hai
+                                quốc gia đều có lịch sử đấu tranh giải phóng dân tộc:</p>
+                            <ul class="history-list">
+                                <li><span class="star-icon">★</span> <strong>Việt Nam:</strong> giành độc lập từ ách
+                                    thống trị Pháp (1945)</li>
+                                <li><span class="star-icon">★</span> <strong>Nam Phi:</strong> xóa bỏ chế độ phân biệt
+                                    chủng tộc Apartheid (1994) dưới sự lãnh đạo của Nelson Mandela</li>
+                            </ul>
+                            <p>Triết lý Ubuntu của Nam Phi - "I am because we are" (tôi tồn tại vì chúng ta tồn tại)
+                                giao thoa mạnh mẽ với thông điệp hạnh phúc của Biti's.</p>
                         </div>
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg></div><span>KẾT NỐI CỘNG ĐỒNG</span>
-                        </div>
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                                </svg></div><span>KHÁT VỌNG HẠNH PHÚC</span>
+                        <div class="lang-en">
+                            <p>The Biti's Hunter 2/9 Special Edition is not a seasonal release. It is a cultural
+                                statement - a wearable declaration of local values anchored in one of Vietnam's most
+                                consequential dates. The 2nd of September marks the 80th anniversary of Vietnamese
+                                National Independence (02.09.1945 – 02.09.2025), the moment a nation claimed its
+                                sovereign right to exist on its own terms. Encoded into every element of this edition is
+                                a narrative of pride, historical memory, and the enduring Vietnamese aspiration for
+                                happiness - rendered not in words alone, but in material, design, and intention.</p>
+                            <p>That narrative finds an unexpected but deeply resonant echo in South Africa. Two nations,
+                                separated by continents and decades, share a history of liberation that is strikingly
+                                parallel in spirit:</p>
+                            <ul class="history-list">
+                                <li><span class="star-icon">★</span> <strong>Vietnam:</strong> secured independence from
+                                    French colonial rule in 1945 - a rupture that redefined an entire civilisation's
+                                    relationship with its own future.</li>
+                                <li><span class="star-icon">★</span> <strong>South Africa:</strong> dismantled the
+                                    Apartheid system in 1994 under the moral authority of President Nelson Mandela -
+                                    ending a regime of enforced separation and restoring the country's people to one
+                                    another.</li>
+                            </ul>
+                            <p>These are not merely historical footnotes. They are the foundations upon which two
+                                distinct but kindred identities were built - identities shaped by resistance,
+                                resilience, and the collective refusal to accept a diminished existence.</p>
+                            <p>It is here that Ubuntu enters not as borrowed philosophy but as genuine common ground.
+                                South Africa's foundational ethos - I am because we are - mirrors with striking
+                                precision the happiness philosophy at the core of Biti's Hunter: that wellbeing is never
+                                truly individual, that it is always constructed in relation to others, always amplified
+                                by community. The 2/9 Special Edition does not impose one culture upon another. It holds
+                                both up to the light and invites each to recognise itself in the other - a dialogue
+                                between two peoples who have each, in their own way, chosen joy as an act of defiance.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -405,54 +516,58 @@
             </button>
             <div class="modal-content">
                 <div class="modal-left">
-                    <div class="badge-special">COMMUNITY EDITION</div>
+                    <div class="badge-special">
+                        <span class="lang-en">COMMUNITY EDITION</span>
+                        <span class="lang-vi">PHIÊN BẢN CỘNG ĐỒNG</span>
+                    </div>
                     <div class="shoe-placeholder-container">
                         <img src="assets/modal//Biti’s Hunter X LiteDash “Go For Love” 2k25 Edition.jpg"
                             alt="Quality Shoe" class="modal-shoe-img">
                     </div>
-                    <div class="photo-polaroids">
+                    <!-- <div class="photo-polaroids">
                         <div class="polaroid polaroid-1"><img src="assets/Cape Town.jpg" alt="Cape Town"></div>
                         <div class="polaroid polaroid-2"><img src="assets/Key Visual-06.png" alt="Detail"
                                 style="opacity: 0.3;"></div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Biti’s Hunter X<br>LiteDash 2k25</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Biti’s Hunter X<br>LiteDash 2k25</span>
+                        <span class="lang-vi">Biti’s Hunter X<br>LiteDash 2k25</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-description">
-                        <p>“Go for Love” được xây dựng như một thông điệp hành vi, khuyến khích sự chủ động trong các
-                            mối quan hệ cá nhân. Trong bối cảnh Valentine, sản phẩm đóng vai trò như một vật phẩm trung
-                            gian, gắn với khoảnh khắc bắt đầu hoặc xác nhận một mối quan hệ.</p>
-                        <p>Khi tiếp cận thị trường Nam Phi, thông điệp của sản phẩm được điều chỉnh để phù hợp với một
-                            xã hội đa cộng đồng và đa bản sắc, nơi tình yêu không chỉ giới hạn trong quan hệ cá nhân mà
-                            còn là sự tôn trọng khác biệt và cảm giác thuộc về. “Go for Love” vì vậy không được diễn
-                            giải như một lời kêu gọi hướng đến một đối tượng cụ thể, mà trở thành một thái độ sống,
-                            khuyến khích con người chủ động kết nối, xây dựng sự thấu hiểu và duy trì những mối liên kết
-                            xã hội.</p>
-                    </div>
-                    <div class="modal-icons">
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                                </svg></div><span>HIỆU NĂNG CAO</span>
+                        <div class="lang-vi">
+                            <p>“Go for Love” được xây dựng như một thông điệp hành vi, khuyến khích sự chủ động trong
+                                các mối quan hệ cá nhân. Trong bối cảnh Valentine, sản phẩm đóng vai trò như một vật
+                                phẩm trung gian, gắn với khoảnh khắc bắt đầu hoặc xác nhận một mối quan hệ.</p>
+                            <p>Khi tiếp cận thị trường Nam Phi, thông điệp của sản phẩm được điều chỉnh để phù hợp với
+                                một xã hội đa cộng đồng và đa bản sắc, nơi tình yêu không chỉ giới hạn trong quan hệ cá
+                                nhân mà còn là sự tôn trọng khác biệt và cảm giác thuộc về. “Go for Love” vì vậy không
+                                được diễn giải như một lời kêu gọi hướng đến một đối tượng cụ thể, mà trở thành một thái
+                                độ sống, khuyến khích con người chủ động kết nối, xây dựng sự thấu hiểu và duy trì những
+                                mối liên kết xã hội.</p>
                         </div>
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg></div><span>THOẢI MÁI</span>
-                        </div>
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                                </svg></div><span>BỀN BỈ</span>
+                        <div class="lang-en">
+                            <p>“Go for Love” is conceived as a behavioural proposition - an invitation to agency rather
+                                than a passive sentiment. In the context of Valentine's Day, the product functions as an
+                                intermediary object, one that marks the moment a relationship begins or is consciously
+                                confirmed. The act of giving is inseparable from the message: to go for love is to move
+                                toward someone, deliberately and without hesitation.</p>
+                            <p>In its South African dimension, the message undergoes a considered cultural expansion -
+                                one that reflects the particular texture of a society defined by multiplicity. South
+                                Africa is not a single community but a constellation of them, bound together by a shared
+                                commitment to coexistence across differences. Here, love is not confined to the intimate
+                                dyad of romantic partnership; it extends outward into the daily practice of respecting
+                                what is unfamiliar, and into the sustaining need to belong - to a neighbourhood, a
+                                culture, a collective story.</p>
+                            <p>“Go for Love,” read through this lens, becomes less a romantic directive than a
+                                philosophy of engagement. It calls on people to move toward one another across the
+                                distances - cultural, social, historical - that can otherwise calcify into indifference.
+                                It asks not merely for affection but for the more demanding gestures of understanding:
+                                the willingness to listen, to remain present, and to tend to the connections that make a
+                                community more than the sum of its parts. In a society still navigating the long
+                                aftermath of division, choosing to go for love is quietly, persistently radical.</p>
                         </div>
                     </div>
                 </div>
@@ -472,50 +587,54 @@
             </button>
             <div class="modal-content">
                 <div class="modal-left">
-                    <div class="badge-special">QUALITY EDITION</div>
+                    <div class="badge-special">
+                        <span class="lang-en">QUALITY EDITION</span>
+                        <span class="lang-vi">PHIÊN BẢN CHẤT LƯỢNG</span>
+                    </div>
                     <div class="shoe-placeholder-container">
                         <img src="assets/modal/Biti’s Hunter Running - Energy Return Men’s Performance Running Shoe.jpg"
                             alt="Community Shoe" class="modal-shoe-img">
                     </div>
-                    <div class="photo-polaroids">
+                    <!-- <div class="photo-polaroids">
                         <div class="polaroid polaroid-1"><img src="assets/Cape Town.jpg" alt="Cape Town"></div>
                         <div class="polaroid polaroid-2"><img src="assets/Key Visual-06.png" alt="Detail"
                                 style="opacity: 0.3;"></div>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Biti’s Hunter<br>Energy Return</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Biti’s Hunter<br>Energy Return</span>
+                        <span class="lang-vi">Biti’s Hunter<br>Energy Return</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-description">
-                        <p>Sản phẩm được xây dựng xoay quanh hành vi chạy bộ như một phần đời sống đô thị tại Nam Phi,
-                            nơi việc chạy không chỉ là thể thao mà còn là hoạt động cộng đồng. Thiết kế và màu sắc gợi
-                            nhắc đến thiên nhiên rộng mở, đường chạy ven biển, và nhịp sống ngoài trời, từ đó định vị
-                            sản phẩm như một công cụ giúp người trẻ duy trì thể chất, kết nối xã hội và hòa mình vào môi
-                            trường sống.</p>
-                    </div>
-                    <div class="modal-icons">
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
-                                </svg></div><span>SỰ GẮN KẾT</span>
+                        <div class="lang-vi">
+                            <p>Sản phẩm được xây dựng xoay quanh hành vi chạy bộ như một phần đời sống đô thị tại Nam
+                                Phi, nơi việc chạy không chỉ là thể thao mà còn là hoạt động cộng đồng. Thiết kế và màu
+                                sắc gợi nhắc đến thiên nhiên rộng mở, đường chạy ven biển, và nhịp sống ngoài trời, từ
+                                đó định vị sản phẩm như một công cụ giúp người trẻ duy trì thể chất, kết nối xã hội và
+                                hòa mình vào môi trường sống.</p>
                         </div>
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
-                                    <circle cx="9" cy="7" r="4" />
-                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
-                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-                                </svg></div><span>VÌ CỘNG ĐỒNG</span>
-                        </div>
-                        <div class="icon-item">
-                            <div class="icon-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                    stroke-width="1.5">
-                                    <path
-                                        d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l8.84-8.84 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
-                                </svg></div><span>TÌNH YÊU THƯƠNG</span>
+                        <div class="lang-en">
+                            <p>In South Africa's major urban centres, running is not a solitary discipline - it is a
+                                civic act. The morning routes along Cape Town's Atlantic Seaboard, the weekend parkruns
+                                that draw hundreds to Johannesburg's green corridors, the informal crews that form and
+                                re-form across city neighbourhoods: these are not training sessions but social rituals,
+                                moments in which the city is claimed, shared, and made meaningful through collective
+                                movement.</p>
+                            <p>It is around this behaviour - running as a fundamental expression of urban life - that
+                                this Biti's Hunter edition is built. The design and colourway do not reference the
+                                interior of a gymnasium or the abstraction of athletic performance. They reach outward:
+                                toward open terrain, coastal running paths, and the quality of light that belongs to a
+                                life lived predominantly outside. The visual language is one of expansiveness - of
+                                horizons rather than finish lines.</p>
+                            <p>For South Africa's younger urban generation, this positioning carries genuine resonance.
+                                Physical wellbeing, social connection, and environmental belonging are not experienced
+                                as separate pursuits but as dimensions of a single, integrated way of inhabiting a city.
+                                A shoe conceived within this understanding becomes more than equipment. It becomes a
+                                daily companion - one that supports the body in motion, places the wearer within a
+                                community of like-minded individuals, and grounds them, stride by stride, in the living
+                                environment they call home.</p>
                         </div>
                     </div>
                 </div>
@@ -539,33 +658,68 @@
                     </div>
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Coffee Highlands</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Coffee Highlands</span>
+                        <span class="lang-vi">Cao nguyên cà phê</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-descriptionScroll">
-                        <p>Tây Nguyên, vùng đất cao nguyên đại ngàn của Việt Nam, không chỉ được biết đến với những sử
-                            thi hùng vĩ mà còn là trái tim của ngành công nghiệp cà phê toàn cầu. Địa hình đồi núi có độ
-                            cao trung bình từ 500 đến 1500m so với mực nước biển, kết hợp với tầng đất đỏ bazan phì
-                            nhiêu phong hóa từ đá núi lửa cổ đại, tạo nên một hệ sinh thái lý tưởng cho sự sinh trưởng
-                            và phát triển của cây cà phê Robusta.</p>
-                        <p>Khí hậu nhiệt đới gió mùa đặc trưng với hai mùa mưa và nắng rõ rệt giúp hạt cà phê tích lũy
-                            hàm lượng caffeine đậm đặc cùng cấu trúc hạt săn chắc. Đây chính là những điều kiện tự nhiên
-                            kiến tạo nên hương vị mạnh mẽ đặc trưng không thể tìm thấy ở bất kỳ vùng địa lý nào khác
-                            trên thế giới, đặt nền móng vững chắc cho câu chuyện thương hiệu toàn cầu của Biti's Hunter.
-                        </p>
-                        <p>Việt Nam hiện đứng vững ở vị thế cường quốc sản xuất và xuất khẩu cà phê Robusta số một thế
-                            giới, chiếm hơn 40% sản lượng toàn cầu. Với quy mô canh tác khổng lồ lên tới khoảng 640,000
-                            trang trại tập trung, Tây Nguyên đóng góp sản lượng gần 1,83 triệu tấn mỗi năm, tương đương
-                            17% sản lượng cà phê thế giới. Trong niên vụ canh tác gần nhất, ngành xuất khẩu cà phê đã
-                            mang về doanh thu vượt ngưỡng 5 tỷ USD, đóng góp hơn 12% vào quy mô GDP ngành nông nghiệp
-                            quốc gia.</p>
+                        <div class="lang-vi">
+                            <p>Tây Nguyên, vùng đất cao nguyên đại ngàn của Việt Nam, không chỉ được biết đến với những
+                                sử thi hùng vĩ mà còn là trái tim của ngành công nghiệp cà phê toàn cầu. Địa hình đồi
+                                núi có độ cao trung bình từ 500 đến 1500m so với mực nước biển, kết hợp với tầng đất đỏ
+                                bazan phì nhiêu phong hóa từ đá núi lửa cổ đại, tạo nên một hệ sinh thái lý tưởng cho sự
+                                sinh trưởng và phát triển của cây cà phê Robusta.</p>
+                            <p>Khí hậu nhiệt đới gió mùa đặc trưng với hai mùa mưa và nắng rõ rệt giúp hạt cà phê tích
+                                lũy hàm lượng caffeine đậm đặc cùng cấu trúc hạt săn chắc. Đây chính là những điều kiện
+                                tự nhiên kiến tạo nên hương vị mạnh mẽ đặc trưng không thể tìm thấy ở bất kỳ vùng địa lý
+                                nào khác trên thế giới, đặt nền móng vững chắc cho câu chuyện thương hiệu toàn cầu của
+                                Biti's Hunter.</p>
+                            <p>Việt Nam hiện đứng vững ở vị thế cường quốc sản xuất và xuất khẩu cà phê Robusta số một
+                                thế giới, chiếm hơn 40% sản lượng toàn cầu. Với quy mô canh tác khổng lồ lên tới khoảng
+                                640,000 trang trại tập trung, Tây Nguyên đóng góp sản lượng gần 1,83 triệu tấn mỗi năm,
+                                tương đương 17% sản lượng cà phê thế giới. Trong niên vụ canh tác gần nhất, ngành xuất
+                                khẩu cà phê đã mang về doanh thu vượt ngưỡng 5 tỷ USD, đóng góp hơn 12% vào quy mô GDP
+                                ngành nông nghiệp quốc gia.</p>
+                        </div>
+                        <div class="lang-en">
+                            <p>The Central Highlands of Vietnam - a vast, mountainous expanse long celebrated for its
+                                epic oral traditions - stands today as the beating heart of the global coffee industry.
+                                Elevated terrain ranging from 500 to 1,500 metres above sea level, overlaid with deep
+                                layers of fertile basalt red soil weathered from ancient volcanic rock, has produced an
+                                ecosystem of rare agricultural perfection for the cultivation of Robusta coffee.</p>
+                            <p>The region's defining tropical monsoon climate, marked by two sharply distinct wet and
+                                dry seasons, enables coffee cherries to accumulate exceptional caffeine concentrations
+                                while developing a dense, compact bean structure. These natural conditions yield a bold,
+                                singular flavour profile found nowhere else on earth and it is precisely this terroir
+                                that underpins the global brand narrative of Biti's Hunter.</p>
+                            <p>From an agro-economic standpoint, Vietnam has firmly established itself as the world's
+                                foremost producer and exporter of Robusta coffee, commanding more than 40 percent of
+                                global supply.</p>
+                            <p>Across approximately 640,000 consolidated farming operations, the Central Highlands
+                                generates close to 1.83 million tonnes annually - equivalent to 17 percent of world
+                                coffee output. In the most recent crop year, coffee exports generated revenues exceeding
+                                five billion US dollars, accounting for more than 12 percent of national agricultural
+                                GDP. These figures make clear that coffee has long transcended its status as a commodity
+                                crop, becoming instead an economic lifeline sustaining the livelihoods of millions of
+                                smallholder farmers and rural communities across the region.</p>
+                            <p>Biti's Hunter's journey into international markets begins with precisely this intimate
+                                understanding of indigenous resources. Rather than pursuing a conventional export model,
+                                the brand has adopted what might be termed a value-export logic - one anchored in a
+                                philosophy of wellbeing and deep cultural literacy.</p>
+                            <p>By drawing on the historical parallels between Vietnam and South Africa, and weaving
+                                together a message of happiness with the communal ethos of Ubuntu, the brand is
+                                operationalising an Asian vision through cultural adaptation rather than
+                                standardisation. The strategic shift - from raw agricultural export to the integration
+                                of knowledge-based value and circular technology into premium consumer goods - marks a
+                                transformative inflection point. It is a model that turns Vietnam's cultural heritage
+                                and living soil into the very foundation beneath the feet of consumers across the world.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <div id="modal-journey-2" class="modal-overlay">
         <div class="modal-container journey-modal">
@@ -582,32 +736,71 @@
                     </div>
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Coffee Grounds</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Coffee Grounds</span>
+                        <span class="lang-vi">Bã cà phê</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-descriptionScroll">
-                        <p>Trong chuỗi giá trị tuyến tính truyền thống dựa trên mô hình khai thác và thải bỏ, hạt cà phê
-                            sau khi trải qua quá trình chiết xuất hương vị tại các nhà máy chế biến sâu sẽ để lại một
-                            lượng phụ phẩm khổng lồ là bã cà phê. Ước tính khoa học chỉ ra rằng, cứ mỗi kilôgam cà phê
-                            nhân được tiêu dùng sẽ thải ra môi trường khoảng 650g bã cà phê ẩm. Khi bị đưa đến các bãi
-                            rác, lượng chất thải hữu cơ này phân hủy thành khí methane (CH4) - một loại khí gây hiệu ứng
-                            nhà kính có khả năng làm trầm trọng thêm biến đổi khí hậu toàn cầu.</p>
-                        <p>Dưới lăng kính của nền kinh tế tuần hoàn, bã cà phê không phải là rác thải mà là một nguồn
-                            tài nguyên sinh học quý giá sở hữu cấu trúc xốp tự nhiên với diện tích bề mặt vi mô rất lớn.
-                            Các nghiên cứu về khoa học vật liệu cho thấy bã cà phê chứa hàm lượng carbon và nitơ dồi
-                            dào, tạo nên cơ chế hấp thụ mùi tương tự than hoạt tính nhưng có nguồn gốc hoàn toàn tự
-                            nhiên.</p>
-                        <p>Khát vọng tái sinh này của Biti's Hunter hoàn toàn tương thích với xu hướng tiêu dùng bền
-                            vững đang phát triển mạnh mẽ tại thị trường Nam Phi. Thế hệ trẻ Nam Phi, đặc biệt là thế hệ
-                            Gen Z và Millennials tại các đô thị lớn, đang ngày càng quan tâm đến câu chuyện đằng sau sản
-                            phẩm họ mua, với hơn 60% ưu tiên các sản phẩm thân thiện với môi trường.</p>
+                        <div class="lang-vi">
+                            <p>Trong chuỗi giá trị tuyến tính truyền thống dựa trên mô hình khai thác và thải bỏ, hạt cà
+                                phê sau khi trải qua quá trình chiết xuất hương vị tại các nhà máy chế biến sâu sẽ để
+                                lại một lượng phụ phẩm khổng lồ là bã cà phê. Ước tính khoa học chỉ ra rằng, cứ mỗi
+                                kilôgam cà phê nhân được tiêu dùng sẽ thải ra môi trường khoảng 650g bã cà phê ẩm. Khi
+                                bị đưa đến các bãi rác, lượng chất thải hữu cơ này phân hủy thành khí methane (CH4) -
+                                một loại khí gây hiệu ứng nhà kính có khả năng làm trầm trọng thêm biến đổi khí hậu toàn
+                                cầu.</p>
+                            <p>Dưới lăng kính của nền kinh tế tuần hoàn, bã cà phê không phải là rác thải mà là một
+                                nguồn tài nguyên sinh học quý giá sở hữu cấu trúc xốp tự nhiên với diện tích bề mặt vi
+                                mô rất lớn. Các nghiên cứu về khoa học vật liệu cho thấy bã cà phê chứa hàm lượng carbon
+                                và nitơ dồi dào, tạo nên cơ chế hấp thụ mùi tương tự than hoạt tính nhưng có nguồn gốc
+                                hoàn toàn tự nhiên.</p>
+                            <p>Khát vọng tái sinh này của Biti's Hunter hoàn toàn tương thích với xu hướng tiêu dùng bền
+                                vững đang phát triển mạnh mẽ tại thị trường Nam Phi. Thế hệ trẻ Nam Phi, đặc biệt là thế
+                                hệ Gen Z và Millennials tại các đô thị lớn, đang ngày càng quan tâm đến câu chuyện đằng
+                                sau sản phẩm họ mua, với hơn 60% ưu tiên các sản phẩm thân thiện với môi trường.</p>
+                        </div>
+                        <div class="lang-en">
+                            <p>In the conventional linear value chain - built on a model of extraction and disposal -
+                                the flavour extraction process at deep-processing facilities leaves behind a substantial
+                                byproduct: spent coffee grounds. Scientific estimates indicate that for every kilogram
+                                of green coffee consumed, approximately 650 grams of wet coffee grounds are discharged
+                                as waste. At Vietnam's scale of production and consumption, this accumulates to hundreds
+                                of thousands of tonnes of spent grounds annually, the vast majority of which remain
+                                unsystematically unutilised. When directed to landfill, this organic matter decomposes
+                                and releases methane (CH₄) - a greenhouse gas with a warming potency that significantly
+                                compounds global climate change. It is against this reality that Biti's Hunter posed an
+                                ambitious question: how to transform Vietnam's single largest agricultural byproduct
+                                into its most valuable raw material.</p>
+                            <p>Viewed through the lens of the circular economy, spent coffee grounds are not waste but a
+                                biologically rich resource, possessing a naturally porous structure with an
+                                exceptionally high microscopic surface area. Materials science research confirms that
+                                coffee grounds contain abundant concentrations of carbon and nitrogen, generating an
+                                odour-absorption mechanism comparable to activated charcoal - yet derived entirely from
+                                natural, renewable sources. The microporous architecture of Robusta coffee grounds also
+                                demonstrates a capacity to absorb and retain water molecules, enabling significantly
+                                faster moisture-wicking than conventional polyester fibres. Recycling spent coffee
+                                grounds therefore addresses two imperatives simultaneously: eliminating the pollution
+                                burden of organic waste streams and accelerating the decarbonisation of industrial
+                                manufacturing, while reducing dependence on fossil-derived raw materials subject to
+                                geopolitical volatility.</p>
+                            <p>This regenerative ambition places Biti's Hunter in direct alignment with the surging
+                                sustainable consumption movement reshaping South Africa's market landscape. The
+                                country's younger demographic - particularly Gen Z and Millennial consumers in major
+                                urban centres - is increasingly attentive to the provenance and values behind the
+                                products they purchase, with more than 60 percent actively prioritising environmentally
+                                responsible goods. At a moment when multinational fashion conglomerates are still
+                                searching for substantive sustainability solutions, Biti's Hunter's application of
+                                coffee-ground circular technology positions the brand as a pioneering sneaker label
+                                delivering genuine green innovation - not as aspiration, but as a physical, wearable
+                                reality beneath the consumer's feet. It is a brand narrative of rare persuasive force:
+                                one that translates an ethical commitment into a tangible product the market can see,
+                                touch, and stand upon.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <div id="modal-journey-3" class="modal-overlay">
         <div class="modal-container journey-modal">
@@ -624,30 +817,63 @@
                     </div>
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">GroundStep™ Technology</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">GroundStep™ Technology</span>
+                        <span class="lang-vi">Công nghệ GroundStep™</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-descriptionScroll">
-                        <p>Công nghệ GroundStep™ do Biti's Hunter phát triển là một bước tiến vượt bậc trong lĩnh vực
-                            khoa học vật liệu, biến bã cà phê Robusta từ Tây Nguyên thành lớp đế lót hiệu năng cao của
-                            đôi giày. Quy trình chuyển hóa vật lý và hóa học khép kín này được vận hành nghiêm ngặt qua
-                            6 giai đoạn kỹ thuật.</p>
-                        <p>Cơ chế hoạt động của GroundStep™ mang lại ba tính năng ưu việt cho người sử dụng: hút ẩm chủ
-                            động, khử mùi tự nhiên và thoáng khí cấu trúc. Nhờ mật độ vi lỗ mở được tối ưu hóa ở mức
-                            cao, lớp đế lót chủ động hút ẩm ngay khi lòng bàn chân tiết mồ hôi, giúp tốc độ khô sau vận
-                            động nhanh hơn khoảng 200% so với đế lót thông thường.</p>
-                        <p>Khả năng khử mùi tự nhiên được duy trì bền vững nhờ bã cà phê giàu carbon và nitơ, hấp thụ và
-                            trung hòa các phân tử gây mùi từ gốc thay vì sử dụng lớp phủ bề mặt dễ bị mài mòn sau thời
-                            gian ngắn sử dụng. Ngoài ra, cấu trúc foam mở tạo ra luồng không khí đối lưu tự nhiên bên
-                            trong giày, giúp duy trì nhiệt độ bàn chân thấp hơn từ 3% đến 5% so với đế lót thông thường
-                            trong cùng điều kiện vận động.</p>
+                        <div class="lang-vi">
+                            <p>Công nghệ GroundStep™ do Biti's Hunter phát triển là một bước tiến vượt bậc trong lĩnh
+                                vực khoa học vật liệu, biến bã cà phê Robusta từ Tây Nguyên thành lớp đế lót hiệu năng
+                                cao của đôi giày. Quy trình chuyển hóa vật lý và hóa học khép kín này được vận hành
+                                nghiêm ngặt qua 6 giai đoạn kỹ thuật.</p>
+                            <p>Cơ chế hoạt động của GroundStep™ mang lại ba tính năng ưu việt cho người sử dụng: hút ẩm
+                                chủ động, khử mùi tự nhiên và thoáng khí cấu trúc. Nhờ mật độ vi lỗ mở được tối ưu hóa ở
+                                mức cao, lớp đế lót chủ động hút ẩm ngay khi lòng bàn chân tiết mồ hôi, giúp tốc độ khô
+                                sau vận động nhanh hơn khoảng 200% so với đế lót thông thường.</p>
+                            <p>Khả năng khử mùi tự nhiên được duy trì bền vững nhờ bã cà phê giàu carbon và nitơ, hấp
+                                thụ và trung hòa các phân tử gây mùi từ gốc thay vì sử dụng lớp phủ bề mặt dễ bị mài mòn
+                                sau thời gian ngắn sử dụng. Ngoài ra, cấu trúc foam mở tạo ra luồng không khí đối lưu tự
+                                nhiên bên trong giày, giúp duy trì nhiệt độ bàn chân thấp hơn từ 3% đến 5% so với đế lót
+                                thông thường trong cùng điều kiện vận động.</p>
+                        </div>
+                        <div class="lang-en">
+                            <p>The GroundStep™ technology developed by Biti's Hunter represents a landmark advance in
+                                materials science - one that transforms Robusta coffee grounds sourced from the Central
+                                Highlands into a high-performance insole system. The closed-loop physicochemical
+                                conversion process is executed across six rigorously controlled technical stages, each
+                                designed to preserve and amplify the material's inherent functional properties.</p>
+                            <p>The mechanism underlying GroundStep™ delivers three distinct performance advantages to
+                                the wearer: active moisture absorption, natural odour neutralisation, and structural
+                                breathability. Through an optimised high-density open-micropore matrix, the insole
+                                actively draws perspiration away from the foot's surface the moment it is produced,
+                                achieving a post-activity drying rate approximately 200 percent faster than conventional
+                                insole materials. Odour control is sustained durably through the carbon and
+                                nitrogen-rich composition of the coffee grounds, which absorb and neutralise
+                                odour-causing molecules at the molecular level - a fundamental distinction from surface
+                                coatings that degrade rapidly with repeated use. Additionally, the open-cell foam
+                                architecture generates a natural convective airflow within the shoe, maintaining foot
+                                temperature between three and five percent lower than standard insoles under equivalent
+                                activity conditions.</p>
+                            <p>Where GroundStep™ most decisively differentiates itself from international competitors is
+                                in its combination of functional precision and accessible price positioning. While Rens
+                                Original incorporates coffee-derived fibres exclusively in the shoe's outer upper - the
+                                surface least exposed to perspiration - GroundStep™ deploys the technology at the point
+                                of direct plantar contact, where its functional value is most immediately realised.
+                                Leveraging large-scale manufacturing capacity and strategic infrastructure partnerships
+                                with logistics leaders including Prologis, BW Industrial, and DHL's global distribution
+                                network, Biti's Hunter has optimised its production economics to deliver a premium
+                                product at a highly competitive price point. This confers a decisive commercialisation
+                                advantage in the South African market, where consumers demand sustainability credentials
+                                that are matched by genuine performance and genuine affordability - not one at the
+                                expense of the other.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <div id="modal-journey-4" class="modal-overlay">
         <div class="modal-container journey-modal">
@@ -664,29 +890,56 @@
                     </div>
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Geluk - Hạnh Phúc</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Geluk - Happiness</span>
+                        <span class="lang-vi">Geluk - Hạnh Phúc</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-descriptionScroll">
-                        <p>Thay vì áp đặt một thông điệp mang tính tiêu chuẩn hóa, Biti's đã bản địa hóa ngôn ngữ bằng
-                            cách chuyển dịch từ khóa HẠNH PHÚC sang tiếng Afrikaans là GELUK nhằm tăng khả năng tiếp
-                            nhận của người tiêu dùng bản địa. Sự chuyển đổi này không chỉ là một hoạt động dịch thuật
-                            đơn thuần mà là một diễn ngôn văn hóa sâu sắc, kết nối khát vọng hạnh phúc của người dân hai
-                            nước.</p>
-                        <p>Sự tương thích này bắt nguồn từ những trang sử hào hùng của cả hai dân tộc trong cuộc đấu
-                            tranh giành quyền tự quyết. Việt Nam giành chủ quyền độc lập vào ngày 2 tháng 9 năm 1945,
-                            trong khi Nam Phi chính thức xóa bỏ chế độ Apartheid vào năm 1994 dưới sự lãnh đạo của
-                            Nelson Mandela.</p>
-                        <p>Đối với dòng sản phẩm chính Biti's Hunter 2/9 Special Edition, câu chuyện độc lập dân tộc kỷ
-                            niệm 80 năm ngày Quốc khánh Việt Nam (1945-2025) đã được chuyển tải thành biểu tượng của
-                            niềm tự hào, sự kiên cường và khát vọng vươn lên chung.</p>
+                        <div class="lang-vi">
+                            <p>Thay vì áp đặt một thông điệp mang tính tiêu chuẩn hóa, Biti's đã bản địa hóa ngôn ngữ
+                                bằng cách chuyển dịch từ khóa HẠNH PHÚC sang tiếng Afrikaans là GELUK nhằm tăng khả năng
+                                tiếp nhận của người tiêu dùng bản địa. Sự chuyển đổi này không chỉ là một hoạt động dịch
+                                thuật đơn thuần mà là một diễn ngôn văn hóa sâu sắc, kết nối khát vọng hạnh phúc của
+                                người dân hai nước.</p>
+                            <p>Sự tương thích này bắt nguồn từ những trang sử hào hùng của cả hai dân tộc trong cuộc đấu
+                                tranh giành quyền tự quyết. Việt Nam giành chủ quyền độc lập vào ngày 2 tháng 9 năm
+                                1945, trong khi Nam Phi chính thức xóa bỏ chế độ Apartheid vào năm 1994 dưới sự lãnh đạo
+                                của Nelson Mandela.</p>
+                            <p>Đối với dòng sản phẩm chính Biti's Hunter 2/9 Special Edition, câu chuyện độc lập dân tộc
+                                kỷ niệm 80 năm ngày Quốc khánh Việt Nam (1945-2025) đã được chuyển tải thành biểu tượng
+                                của niềm tự hào, sự kiên cường và khát vọng vươn lên chung.</p>
+                        </div>
+                        <div class="lang-en">
+                            <p>The South African launch campaign for Biti's Hunter marks a strategic transformation of
+                                the brand's core vision and mission into an international idiom. Rather than imposing a
+                                standardised message across markets, Biti's pursued deliberate localisation -
+                                translating its central keyword, HAPPINESS, into the Afrikaans GELUK to maximise
+                                resonance with the domestic consumer. This shift is far more than a transliteration
+                                exercise; it constitutes a profound act of cultural dialogue, bridging the Vietnamese
+                                aspiration for happiness with the spirit of optimism and the deep longing for freedom
+                                that defines the South African experience.</p>
+                            <p>This affinity is rooted in the parallel histories of two nations that each waged defining
+                                struggles for self-determination. Vietnam secured its sovereign independence from
+                                colonial rule on 2 September 1945, while South Africa formally dismantled the Apartheid
+                                system in 1994 under the transformative leadership of President Nelson Mandela. For the
+                                flagship Biti's Hunter 2/9 Special Edition - released to mark the 80th anniversary of
+                                Vietnamese National Day (1945–2025) - the narrative of national liberation has been
+                                transmuted into a shared symbol of pride, resilience, and the collective will to rise.
+                                It is a story that neither nation needs translated.</p>
+                            <p>Through a design language rich in symbolic intent, the Hero line functions not merely as
+                                a fashion object but as a substantive cultural bridge. The considered fusion of
+                                Vietnam's visual identity with aesthetic references familiar to South African consumers
+                                enables the product to move fluidly across multicultural contexts. Biti's Hunter has
+                                achieved what few brands manage: the conversion of deeply local identity into an
+                                intercultural vocabulary legible on the international stage - positioning its product as
+                                an emblem of shared historical empathy and the common aspiration of a younger generation
+                                in both countries to define happiness on their own terms.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <div id="modal-journey-5" class="modal-overlay">
         <div class="modal-container journey-modal">
@@ -703,27 +956,64 @@
                     </div>
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Triết lý Ubuntu</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Ubuntu and the Art of Walking Together</span>
+                        <span class="lang-vi">Triết lý Ubuntu</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-descriptionScroll">
-                        <p>Triết lý Ubuntu của Nam Phi - tóm gọn trong mệnh đề "Tôi tồn tại vì chúng ta tồn tại" - nhấn
-                            mạnh giá trị của cộng đồng, sự đoàn kết, tính nhân văn và lòng trắc ẩn. Triết lý này có sự
-                            giao thoa mạnh mẽ với thông điệp hạnh phúc và các giá trị cốt lõi của Biti's.</p>
-                        <p>Thương hiệu quan niệm hạnh phúc không phải là một trạng thái vị kỷ của cá nhân, mà là một giá
-                            trị cộng hưởng tập thể. Mô hình kinh tế tuần hoàn nhân văn đảm bảo sinh kế của người nông
-                            dân trồng cà phê tại Tây Nguyên thông qua việc thu mua phụ phẩm bã cà phê, góp phần thu hẹp
-                            khoảng cách giàu nghèo.</p>
-                        <p>Bằng cách gắn kết câu chuyện sản phẩm với các giá trị nhân văn sâu sắc của triết lý Ubuntu,
-                            Biti's Hunter không chỉ bán một đôi giày mà đang xây dựng một cộng đồng những người tiêu
-                            dùng có ý thức, biến mỗi bước đi thành một hành động lan tỏa sự tử tế và hạnh phúc.</p>
+                        <div class="lang-vi">
+                            <p>Triết lý Ubuntu của Nam Phi - tóm gọn trong mệnh đề "Tôi tồn tại vì chúng ta tồn tại" -
+                                nhấn mạnh giá trị của cộng đồng, sự đoàn kết, tính nhân văn và lòng trắc ẩn. Triết lý
+                                này có sự giao thoa mạnh mẽ với thông điệp hạnh phúc và các giá trị cốt lõi của Biti's.
+                            </p>
+                            <p>Thương hiệu quan niệm hạnh phúc không phải là một trạng thái vị kỷ của cá nhân, mà là một
+                                giá trị cộng hưởng tập thể. Mô hình kinh tế tuần hoàn nhân văn đảm bảo sinh kế của người
+                                nông dân trồng cà phê tại Tây Nguyên thông qua việc thu mua phụ phẩm bã cà phê, góp phần
+                                thu hẹp khoảng cách giàu nghèo.</p>
+                            <p>Bằng cách gắn kết câu chuyện sản phẩm với các giá trị nhân văn sâu sắc của triết lý
+                                Ubuntu, Biti's Hunter không chỉ bán một đôi giày mà đang xây dựng một cộng đồng những
+                                người tiêu dùng có ý thức, biến mỗi bước đi thành một hành động lan tỏa sự tử tế và hạnh
+                                phúc.</p>
+                        </div>
+                        <div class="lang-en">
+                            <p>South Africa's Ubuntu philosophy - distilled in the declaration I am because we are -
+                                enshrines the values of community, solidarity, shared humanity, and compassion. Its
+                                resonance with Biti's Hunter's happiness ethos and core principles, particularly its
+                                emphasis on collective spirit and the purpose of service, is not incidental but
+                                structural. The brand conceives of happiness not as a private, self-contained state but
+                                as an inherently collective force - one that grows in proportion to how widely it is
+                                shared.</p>
+                            <p>To encode this philosophy into the product itself, the shoe's tag incorporates the image
+                                of a dandelion. The choice is deliberate and deeply symbolic: the dandelion's seeds,
+                                carried by wind to take root in distant soils, evoke precisely the manner in which
+                                Ubuntu binds people together through the quiet, expansive acts of sharing and empathy
+                                that cross every boundary of geography and origin.</p>
+                            <p>This connection is given concrete economic form through a humane circular model in which
+                                every step taken by a South African consumer directly contributes to the livelihood of
+                                coffee farmers in the Central Highlands of Vietnam. The model ensures that revenues
+                                generated by the export of high-technology consumer goods are redistributed equitably -
+                                through the procurement of spent coffee grounds as a valued raw material - narrowing the
+                                wealth gap and protecting the environment at the source of agricultural production. This
+                                is Ubuntu rendered in its most practical expression: a tangible, unbroken chain linking
+                                the smallholder farms of Vietnam's rural highlands to the premium manufacturing value
+                                chains of the global urban economy.</p>
+                            <p>This inclusive growth model speaks with particular precision to the evolving consumer
+                                behaviour of South Africa's younger generation. Research conducted among consumers in
+                                Soweto and Johannesburg demonstrates that environmental awareness and community
+                                influence carry decisive weight in the green purchasing intentions of young adults. A
+                                McKinsey report reinforces this picture, finding that South Africa's youth are actively
+                                seeking and willing to pay a premium for - sustainable products with transparent
+                                provenance and demonstrable community benefit. By anchoring its product narrative in the
+                                profound humanist values of Ubuntu, Biti's Hunter is not simply selling a shoe. It is
+                                building a community of conscious consumers, transforming each step into a deliberate
+                                act of kindness and proof that happiness, like a dandelion in the wind, travels furthest
+                                when it is given away.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
     <div id="modal-journey-6" class="modal-overlay">
         <div class="modal-container journey-modal">
@@ -740,28 +1030,56 @@
                     </div>
                 </div>
                 <div class="modal-right">
-                    <h2 class="modal-title">Cape Town Streets</h2>
+                    <h2 class="modal-title">
+                        <span class="lang-en">Cape Town Streets</span>
+                        <span class="lang-vi">Đường phố Cape Town</span>
+                    </h2>
                     <div class="title-underline"></div>
                     <div class="modal-descriptionScroll">
-                        <p>Nhịp sống đô thị tại các thành phố lớn của Nam Phi như Cape Town và Johannesburg sở hữu một
-                            năng lượng vô cùng mạnh mẽ. Khí hậu bán khô hạn đặc trưng cùng mùa đông ẩm ướt kéo dài tại
-                            Cape Town đòi hỏi các đôi giày phải có khả năng điều hòa nhiệt độ bàn chân và thoát ẩm nhanh
-                            chóng.</p>
-                        <p>Về mặt văn hóa, thời trang đường phố Nam Phi gắn liền với khái niệm "Takkies" - biểu tượng
-                            của phong cách cá nhân và sự tự khẳng định bản thân. Sự bùng nổ của nền âm nhạc và vũ đạo
-                            Amapiano đòi hỏi đôi giày phải có độ thông thoáng, tính năng khử mùi và độ đàn hồi phản hồi
-                            lực cực tốt.</p>
-                        <p>Bối cảnh thực tế này giúp lớp đế lót bã cà phê GroundStep™ phát huy tối đa công năng vượt
-                            trội của mình, giúp người trẻ Nam Phi duy trì thể chất, kết nối xã hội và tự tin thể hiện
-                            phong cách riêng trên mọi nẻo đường.</p>
+                        <div class="lang-vi">
+                            <p>Nhịp sống đô thị tại các thành phố lớn của Nam Phi như Cape Town và Johannesburg sở hữu
+                                một năng lượng vô cùng mạnh mẽ. Khí hậu bán khô hạn đặc trưng cùng mùa đông ẩm ướt kéo
+                                dài tại Cape Town đòi hỏi các đôi giày phải có khả năng điều hòa nhiệt độ bàn chân và
+                                thoát ẩm nhanh chóng.</p>
+                            <p>Về mặt văn hóa, thời trang đường phố Nam Phi gắn liền với khái niệm "Takkies" - biểu
+                                tượng của phong cách cá nhân và sự tự khẳng định bản thân. Sự bùng nổ của nền âm nhạc và
+                                vũ đạo Amapiano đòi hỏi đôi giày phải có độ thông thoáng, tính năng khử mùi và độ đàn
+                                hồi phản hồi lực cực tốt.</p>
+                            <p>Bối cảnh thực tế này giúp lớp đế lót bã cà phê GroundStep™ phát huy tối đa công năng vượt
+                                trội của mình, giúp người trẻ Nam Phi duy trì thể chất, kết nối xã hội và tự tin thể
+                                hiện phong cách riêng trên mọi nẻo đường.</p>
+                        </div>
+                        <div class="lang-en">
+                            <p>The urban rhythm of South Africa's major cities - Cape Town and Johannesburg among them -
+                                carries an intensity that is as demanding on footwear as it is exhilarating to inhabit.
+                                The semi-arid climate characteristic of both cities drives outdoor concrete surface
+                                temperatures to between 40 and 50 degrees Celsius during summer months. Compounding
+                                this, Johannesburg's brief but ferociously intense convective storms and Cape Town's
+                                prolonged humid winters together place exceptional demands on a shoe's capacity for
+                                thermal regulation and rapid moisture dispersal. South African urban dwellers are, by
+                                disposition, physically active outdoors - moving between the rocky, gravel-strewn
+                                gradients of Table Mountain and the sustained exertion of street festivals that unfold
+                                across entire days without pause.</p>
+                            <p>Culturally, South African street fashion is inseparable from the concept of Takkies - a
+                                distinctly local vernacular for sneakers that function as far more than athletic
+                                equipment. In the South African urban imagination, Takkies are the supreme expression of
+                                personal style, self-assertion, and social standing. This cultural weight has been
+                                further amplified by the explosive rise of Amapiano - the music and movement culture
+                                that emerged from the townships of Gauteng to reshape the daily aesthetic life of an
+                                entire urban generation.</p>
+                            <p>Amapiano's choreographic vocabulary demands slow, deep, and fluid corporeal movement over
+                                relentless log drum percussion. A single groove session or music festival can sustain
+                                for six to ten continuous hours, placing extraordinary stress on a shoe's breathability,
+                                odour management, and energy-return properties. It is precisely within this lived
+                                context that the GroundStep™ coffee-ground insole - with its documented capacity to
+                                reduce foot temperature by three to five percent and its active molecular odour control
+                                - delivers its most decisive functional advantage. This is not laboratory performance.
+                                It is performance engineered for the street, the stage, and the hours in between.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    </div>
-    </div>
-    </div>
     </div>
 
     <script src="script.js"></script>
