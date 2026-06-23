@@ -273,4 +273,46 @@ document.addEventListener('DOMContentLoaded', () => {
             langLink.textContent = savedLang === 'en' ? 'EN | VI' : 'VI | EN';
         }
     }
+    // Modal Logic
+    const productLinks = document.querySelectorAll('.product-link');
+    const closeButtons = document.querySelectorAll('[data-close]');
+    const allModals = document.querySelectorAll('.modal-overlay');
+
+    productLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const modalId = link.getAttribute('data-modal');
+            const targetModal = document.getElementById(modalId);
+            if (targetModal) {
+                targetModal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            }
+        });
+    });
+
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            allModals.forEach(modal => modal.classList.remove('active'));
+            document.body.style.overflow = '';
+        });
+    });
+
+    allModals.forEach(modal => {
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        });
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+            const activeModal = document.querySelector('.modal-overlay.active');
+            if (activeModal) {
+                activeModal.classList.remove('active');
+                document.body.style.overflow = '';
+            }
+        }
+    });
 });
