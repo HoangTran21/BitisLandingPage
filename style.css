@@ -1418,6 +1418,11 @@ section {
     background-image: url('assets/Key Visual-06.png');
 }
 
+#modal-shoe-2 .modal-left::before,
+#modal-shoe-3 .modal-left::before {
+    background-image: url('assets/Cape\ Town.jpg');
+}
+
 .badge-special {
     position: absolute;
     top: 40px;
