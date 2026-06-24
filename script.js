@@ -367,4 +367,22 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Video Scroll Trigger Logic
+    const journeyVideo = document.getElementById('journey-video');
+    if (journeyVideo) {
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting && entry.intersectionRatio >= 0.8) {
+                    journeyVideo.play();
+                } else {
+                    journeyVideo.pause();
+                }
+            });
+        }, { 
+            threshold: [0, 0.8] // Trigger when 80% is visible
+        });
+
+        videoObserver.observe(journeyVideo);
+    }
 });
