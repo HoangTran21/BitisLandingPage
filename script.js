@@ -207,9 +207,140 @@ document.addEventListener('DOMContentLoaded', () => {
             if (targetModal) {
                 targetModal.classList.add('active');
                 document.body.style.overflow = 'hidden';
+                
+                // Initialize carousel if this modal has one
+                const carousel = targetModal.querySelector('.shoe-carousel');
+                if (carousel && !carousel.dataset.initialized) {
+                    initCarousel(carousel);
+                }
             }
         });
     });
+
+    function initCarousel(carousel) {
+        const track = carousel.querySelector('.carousel-track');
+        const slides = Array.from(track.children);
+        const nextButton = carousel.querySelector('.carousel-button-right');
+        const prevButton = carousel.querySelector('.carousel-button-left');
+        const dotsNav = carousel.querySelector('.carousel-nav');
+        const dots = Array.from(dotsNav.children);
+
+        // No need for setSlidePosition if using CSS flex and percentage transform
+        // Just ensure the track has the right width or translation
+        
+        const moveToSlide = (track, currentSlide, targetSlide) => {
+            const targetIndex = slides.indexOf(targetSlide);
+            track.style.transform = `translateX(-${targetIndex * 100}%)`;
+            currentSlide.classList.remove('current-slide');
+            targetSlide.classList.add('current-slide');
+        };
+
+        const updateDots = (currentDot, targetDot) => {
+            currentDot.classList.remove('current-slide');
+            targetDot.classList.add('current-slide');
+        };
+
+        const hideShowArrows = (slides, prevButton, nextButton, targetIndex) => {
+            if (targetIndex === 0) {
+                prevButton.classList.add('is-hidden');
+                nextButton.classList.remove('is-hidden');
+            } else if (targetIndex === slides.length - 1) {
+                prevButton.classList.remove('is-hidden');
+                nextButton.classList.add('is-hidden');
+            } else {
+                prevButton.classList.remove('is-hidden');
+                nextButton.classList.remove('is-hidden');
+            }
+        };
+
+        // When I click left, move slides to the left
+        prevButton.addEventListener('click', e => {
+            const currentSlide = track.querySelector('.current-slide');
+            const prevSlide = currentSlide.previousElementSibling;
+            const currentDot = dotsNav.querySelector('.current-slide');
+            const prevDot = currentDot.previousElementSibling;
+            const prevIndex = slides.findIndex(slide => slide === prevSlide);
+
+            moveToSlide(track, currentSlide, prevSlide);
+            updateDots(currentDot, prevDot);
+            hideShowArrows(slides, prevButton, nextButton, prevIndex);
+        });
+
+        // When I click right, move slides to the right
+        nextButton.addEventListener('click', e => {
+            const currentSlide = track.querySelector('.current-slide');
+            const nextSlide = currentSlide.nextElementSibling;
+            const currentDot = dotsNav.querySelector('.current-slide');
+            const nextDot = currentDot.nextElementSibling;
+            const nextIndex = slides.findIndex(slide => slide === nextSlide);
+
+            moveToSlide(track, currentSlide, nextSlide);
+            updateDots(currentDot, nextDot);
+            hideShowArrows(slides, prevButton, nextButton, nextIndex);
+        });
+
+        // When I click the nav indicators, move to that slide
+        dotsNav.addEventListener('click', e => {
+            const targetDot = e.target.closest('button');
+
+            if (!targetDot) return;
+
+            const currentSlide = track.querySelector('.current-slide');
+            const currentDot = dotsNav.querySelector('.current-slide');
+            const targetIndex = dots.findIndex(dot => dot === targetDot);
+            const targetSlide = slides[targetIndex];
+
+            moveToSlide(track, currentSlide, targetSlide);
+            updateDots(currentDot, targetDot);
+            hideShowArrows(slides, prevButton, nextButton, targetIndex);
+        });
+
+        // Add Zoom functionality
+        slides.forEach(slide => {
+            const img = slide.querySelector('img');
+            if (img) {
+                img.style.cursor = 'zoom-in';
+                // Trigger zoom on image click
+                img.onclick = (e) => {
+                    e.stopPropagation();
+                    console.log('Zooming image:', img.src);
+                    openLightbox(img.src);
+                };
+            }
+        });
+
+        carousel.dataset.initialized = "true";
+    }
+
+    // Lightbox Logic
+    function openLightbox(src) {
+        let lightbox = document.getElementById('lightbox');
+        if (!lightbox) {
+            lightbox = document.createElement('div');
+            lightbox.id = 'lightbox';
+            lightbox.innerHTML = `
+                <div class="lightbox-content">
+                    <img src="${src}" alt="Zoomed shoe">
+                    <button class="lightbox-close">&times;</button>
+                </div>
+            `;
+            document.body.appendChild(lightbox);
+            
+            lightbox.addEventListener('click', (e) => {
+                if (e.target.id === 'lightbox' || e.target.classList.contains('lightbox-close')) {
+                    lightbox.classList.remove('active');
+                }
+            });
+        } else {
+            lightbox.querySelector('img').src = src;
+        }
+        
+        // Use a tiny timeout to trigger transition
+        setTimeout(() => {
+            lightbox.classList.add('active');
+            document.body.style.overflow = 'hidden'; // Keep background locked
+        }, 10);
+    }
 
     closeButtons.forEach(btn => {
         btn.addEventListener('click', () => {
